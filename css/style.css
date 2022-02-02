@@ -1,2 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.header {
+  background: #EAEAEA;
+}
+.header__img {
+  background: #FFF;
+  box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+.header__logo {
+  max-width: 60%;
+  margin: auto;
+  padding: 1rem;
+}
+.header__search {
+  position: relative;
+}
+.header__icon {
+  position: absolute;
+  top: 32%;
+  left: 25%;
+  color: #6A6A6A;
+}
+.header__input {
+  background: transparent;
+  border: none;
+  margin-left: auto;
+  width: 60%;
+  padding: 12px;
+  padding-left: 13%;
+}
+.header__input[placeholder] {
+  font-weight: bold;
+}
+.header__input:focus {
+  outline: none;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+.hero {
+  background: #F6F6F6;
+}
+.hero__title {
+  margin: 10px auto;
+  max-width: 80%;
+}
+.hero__description {
+  margin: 10px auto;
+}
+.hero__button {
+  margin: 1rem auto;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #FFF;
+  background: linear-gradient(-10deg, #9356DC, #FF76DA);
+  padding: 0.7em 1.4em;
+  box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
