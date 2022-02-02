@@ -5,3 +5,22 @@ body {
     text-align: center;
     -webkit-tap-highlight-color: transparent;
 }
+
+section {
+    padding: 2rem 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        h3 {
+            color: $primary-color;
+        }
+    }
+}
+
+li:hover {
+    color: $primary-color;
+}

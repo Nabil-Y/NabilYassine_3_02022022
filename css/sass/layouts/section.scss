@@ -1,16 +1,11 @@
 @import "../utils/variables";
 
-section {
-    padding: 2rem 1rem;
-}
-
 .hero {
-
     background: $grey-light;
 
     &__title {
         margin: 10px auto;
-        max-width: 80%;
+        max-width: 70%;
     }
 
     &__description {
@@ -24,8 +19,151 @@ section {
         font-weight: bold;
         color: $white;
         background: linear-gradient(-10deg, $primary-color, $secondary-color);
-        padding: 0.7em 1.4em;
-        box-shadow: 0 2px 5px 3px rgba(0,0,0,0.2);
+        padding: 0.8em 1.6em;
+        box-shadow: $shadow-button-light;
         cursor: pointer;
+        transition: filter ease 0.5s, box-shadow ease 0.5s;
+
+        &:hover {
+            filter: brightness(110%);
+            box-shadow: $shadow-button-dark;
+        }
+    }
+}
+
+.information {
+
+    &__pill:last-child {
+        background: $primary-color-light;
+
+        .pill__icon {
+            color: $primary-color
+        }
+    }
+
+    &__title {
+        text-align: left;
+        margin: 1rem 0;
+    }
+
+    &__pill {
+        display: flex;
+        background: $grey-light;
+        border-radius: 20px;
+        padding: 1.4rem 2rem;
+        margin: 2rem 1rem;
+        box-shadow: $shadow-big;
+        font-weight: bold;
+        position: relative;
+
+        .pill {
+            &__icon {
+                @extend .center-all;
+                width: 30px;
+                margin-right: 1rem;
+            }
+
+            &__description {
+                margin-right: auto;
+            }
+        }
+    }
+
+    .pill--1::before {
+        @extend .center-all;
+        content: "1";
+        position: absolute;
+        left: -3%;
+        top: 35%;
+        width: 20px;
+        height: 20px;
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 50%;
+        background: $primary-color;
+        color: $white;
+    }
+
+    .pill--2::before {
+        @extend .center-all;
+        content: "2";
+        position: absolute;
+        left: -3%;
+        width: 20px;
+        height: 20px;
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 50%;
+        background: $primary-color;
+        color: $white;
+    }
+
+    .pill--3::before {
+        @extend .center-all;
+        content: "3";
+        position: absolute;
+        left: -3%;
+        width: 20px;
+        height: 20px;
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 50%;
+        background: $primary-color;
+        color: $white;
+    }
+
+}
+
+.Restaurants {
+    background: $grey-light;
+
+    &__title {
+        text-align: left;
+    }
+
+    &__Card {
+        display: block;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 2rem 0;
+        box-shadow: $shadow-big;
+
+        &--new {
+            position: relative;
+
+            &::before {
+                content: "Nouveau";
+                @extend .center-all;
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                width: 80px;
+                height:30px;
+                background: $tertiary-color;
+                color: $tertiary-dark;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .Card {
+        &__img {
+            max-height: 180px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center bottom;
+        }
+
+        &__img--big {
+            object-position: center -145px;
+        }
+
+        &__content {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .6rem 1rem;
+        }
     }
 }

@@ -1,0 +1,22 @@
+@import "../utils/variables";
+
+
+.Footer {
+    background: $black-light;
+    padding: 2rem 1rem;
+    text-align: left;
+    color: $white;
+
+    &__Title {
+        font-family: $font-title;
+        font-size: 1.4rem;
+    }
+
+    &__Link {
+        line-height: 2;
+    }
+
+    &__icon {
+        width:24px;
+    }
+}
