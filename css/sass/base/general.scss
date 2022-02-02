@@ -1,0 +1,7 @@
+@import "../utils/variables";
+
+body {
+    font-family: $font-text;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}

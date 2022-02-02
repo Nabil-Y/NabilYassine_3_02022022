@@ -1,0 +1,45 @@
+@import "../utils/variables";
+
+.header {
+    background: $grey-dark;
+
+    &__img {
+        background: $white;
+        box-shadow: 1px 0 10px 1px rgba(0,0,0,0.1);
+    }
+
+    &__logo {
+        max-width: 60%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    &__search {
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 32%;
+        left: 25%;
+        color: #6A6A6A;
+    }
+
+    &__input {
+        background: transparent;
+        border:none;
+        margin-left: auto;
+        width: 60%;
+        padding: 12px;
+        padding-left: 13%;
+
+
+        &[placeholder] {
+            font-weight: bold;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

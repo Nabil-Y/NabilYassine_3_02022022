@@ -1,0 +1,31 @@
+@import "../utils/variables";
+
+section {
+    padding: 2rem 1rem;
+}
+
+.hero {
+
+    background: $grey-light;
+
+    &__title {
+        margin: 10px auto;
+        max-width: 80%;
+    }
+
+    &__description {
+        margin: 10px auto;
+    }
+
+    &__button {
+        margin: 1rem auto;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        color: $white;
+        background: linear-gradient(-10deg, $primary-color, $secondary-color);
+        padding: 0.7em 1.4em;
+        box-shadow: 0 2px 5px 3px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+}
