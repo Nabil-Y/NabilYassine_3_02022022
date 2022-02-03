@@ -35,6 +35,10 @@ label {
     z-index: 1;
     animation: disappear 1s ease 2.5s forwards;
 
+    &__wrapper {
+        animation: appear 1s ease;
+    }
+
     &__text {
         padding: 2rem;
         font-weight: bold;
@@ -42,10 +46,10 @@ label {
         background: linear-gradient(45deg, $primary-color, $secondary-color);
         background-clip: text;
         color: transparent;
-        animation: appear 0.5s ease;
     }
 
     &__circle {
+        margin: auto;
         height:100px;
         width: 100px;
         border: solid 15px $grey-dark;
@@ -204,7 +208,7 @@ label {
             display: flex;
             width: 100%;
 
-            .wrapper {
+            &__wrapper {
                 width:100%;
             }
     

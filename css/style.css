@@ -48,6 +48,9 @@ label {
   z-index: 1;
   animation: disappear 1s ease 2.5s forwards;
 }
+.Loader__wrapper {
+  animation: appear 1s ease;
+}
 .Loader__text {
   padding: 2rem;
   font-weight: bold;
@@ -55,9 +58,9 @@ label {
   background: linear-gradient(45deg, #9356DC, #FF76DA);
   background-clip: text;
   color: transparent;
-  animation: appear 0.5s ease;
 }
 .Loader__circle {
+  margin: auto;
   height: 100px;
   width: 100px;
   border: solid 15px #EAEAEA;
@@ -184,7 +187,7 @@ label input:checked + .Hearts .Heart--full {
     display: flex;
     width: 100%;
   }
-  body main .wrapper {
+  body main__wrapper {
     width: 100%;
   }
   body main .Restaurants {
