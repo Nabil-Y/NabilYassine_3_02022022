@@ -16,105 +16,100 @@
             <img class="header__logo" src="./images/logo/ohmyfood.png" alt="Logo de notre compagnie Oh My Food">
         </div>
         <div class="header__search">
-            <form action="">
+            <form action="/">
                 <i class="fas fa-map-marker-alt header__icon"></i>
                 <input class="header__input" type="text" placeholder="Paris, Belleville">
             </form>
         </div>
     </header>
 
-    <section class="hero">
-        <h1 class="hero__title">Réservez le menu qui vous convient</h1>
-        <p class="hero__description">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <form action="#restaurant">
-            <button class="hero__button">Explorer nos restaurants</button>
-        </form>
-    </section>
-
-    <section class="information">
-        <h2 class="information__title">Fonctionnement</h2>
-        <div class="information__pill pill--1">
-            <i class="pill__icon fas fa-mobile-alt"></i>
-            <p class="pill_description">Choisissez un restaurant</p>
-        </div>
-        <div class="information__pill pill--2">
-            <i class="pill__icon fas fa-list-ul"></i>
-            <p class="pill_description">Composez votre menu</p>
-        </div>
-        <div class="information__pill pill--3">
-            <i class="pill__icon fas fa-store"></i>
-            <p class="pill_description">Dégustez au restaurant</p>
-        </div>
-    </section>
-
-    <section id="restaurant" class="Restaurants">
-        <h2 class="Restaurants__title">Restaurants</h2>
-
-        <div class="Restaurants__Card Restaurants__Card--new">
-            <a href="#"><img class="Card__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat du restaurant La palette du goût"></a>
-            <div class="Card__content">
-                <a href="#" class="Card__content--left">
-                    <h3 class="Card__title">La palette du goût</h3>
-                    <p class="Card__city">Ménilmontant</p>
-                </a>
-                <div class="Card__content--right">
-                    <label for="like-one">
-                        <input type="checkbox" name="like" id="like-one">
-                        <div class="Hearts"><i class="Heart Heart--empty far fa-heart"></i><i class="Heart Heart--full fas fa-heart"></i> </div>
-                    </label>
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">Réservez le menu qui vous convient</h1>
+            <p class="hero__description">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <form action="#restaurant">
+                <button class="hero__button">Explorer nos restaurants</button>
+            </form>
+        </section>
+        <section class="information">
+            <h2 class="information__title">Fonctionnement</h2>
+            <div class="information__pill pill--1">
+                <i class="pill__icon fas fa-mobile-alt"></i>
+                <p class="pill_description">Choisissez un restaurant</p>
+            </div>
+            <div class="information__pill pill--2">
+                <i class="pill__icon fas fa-list-ul"></i>
+                <p class="pill_description">Composez votre menu</p>
+            </div>
+            <div class="information__pill pill--3">
+                <i class="pill__icon fas fa-store"></i>
+                <p class="pill_description">Dégustez au restaurant</p>
+            </div>
+        </section>
+        <section id="restaurant" class="Restaurants">
+            <h2 class="Restaurants__title">Restaurants</h2>
+            <div class="Restaurants__Card Restaurants__Card--new">
+                <a href="#"><img class="Card__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat du restaurant La palette du goût"></a>
+                <div class="Card__content">
+                    <a href="#" class="Card__content--left">
+                        <h3 class="Card__title">La palette du goût</h3>
+                        <p class="Card__city">Ménilmontant</p>
+                    </a>
+                    <div class="Card__content--right">
+                        <label for="like-one">
+                            <input type="checkbox" name="like" id="like-one">
+                            <span class="Hearts"><i class="Heart Heart--empty far fa-heart"></i><i class="Heart Heart--full fas fa-heart"></i></span>
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="Restaurants__Card Restaurants__Card--new">
-            <a href="#"><img class="Card__img Card__img--big" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'un plat du restaurant La note enchantée"></a>
-            <div class="Card__content">
-                <a href="#" class="Card__content--left">
-                    <h3 class="Card__title">La note enchantée</h3>
-                    <p class="Card__city">Charonne</p>
-                </a>
-                <div class="Card__content--right">
-                    <label for="like-two">
-                        <input type="checkbox" name="like" id="like-two">
-                        <div class="Hearts"><i class="Heart Heart--empty far fa-heart"></i><i class="Heart Heart--full fas fa-heart"></i></div> 
-                    </label>
-                </div>
-            </div>     
-        </div>
-
-        <div class="Restaurants__Card">
-            <a href="#"><img class="Card__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat du restaurant À la française"></a>
-            <div class="Card__content">
-                <a href="#" class="Card__content--left">
-                    <h3 class="Card__title">À la française</h3>
-                    <p class="Card__city">Cité Rouge</p>
-                </a>
-                <div class="Card__content--right">
-                    <label for="like-three">
-                        <input type="checkbox" name="like" id="like-three">
-                        <div class="Hearts"><i class="Heart Heart--empty far fa-heart "></i><i class="Heart Heart--full fas fa-heart "></i> </div>
-                    </label>
+            <div class="Restaurants__Card Restaurants__Card--new">
+                <a href="#"><img class="Card__img Card__img--big" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'un plat du restaurant La note enchantée"></a>
+                <div class="Card__content">
+                    <a href="#" class="Card__content--left">
+                        <h3 class="Card__title">La note enchantée</h3>
+                        <p class="Card__city">Charonne</p>
+                    </a>
+                    <div class="Card__content--right">
+                        <label for="like-two">
+                            <input type="checkbox" name="like" id="like-two">
+                            <span class="Hearts"><i class="Heart Heart--empty far fa-heart"></i><i class="Heart Heart--full fas fa-heart"></i></span>
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="Restaurants__Card">
-            <a href="#"><img class="Card__img" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat du restaurant Le délice des sens"></a>
-            <div class="Card__content">
-                <a href="#" class="Card__content--left">
-                    <h3 class="Card__title">Le délice des sens</h3>
-                    <p class="Card__city">Folie-Méricourt</p>
-                </a>
-                <div class="Card__content--right">
-                    <label for="like-four">
-                        <input type="checkbox" name="like" id="like-four">
-                        <div class="Hearts"><i class="Heart Heart--empty far fa-heart "></i><i class="Heart Heart--full fas fa-heart "></i></div>
-                    </label>
+            <div class="Restaurants__Card">
+                <a href="#"><img class="Card__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat du restaurant À la française"></a>
+                <div class="Card__content">
+                    <a href="#" class="Card__content--left">
+                        <h3 class="Card__title">À la française</h3>
+                        <p class="Card__city">Cité Rouge</p>
+                    </a>
+                    <div class="Card__content--right">
+                        <label for="like-three">
+                            <input type="checkbox" name="like" id="like-three">
+                            <span class="Hearts"><i class="Heart Heart--empty far fa-heart "></i><i class="Heart Heart--full fas fa-heart "></i></span>
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </section>
+            <div class="Restaurants__Card">
+                <a href="#"><img class="Card__img" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat du restaurant Le délice des sens"></a>
+                <div class="Card__content">
+                    <a href="#" class="Card__content--left">
+                        <h3 class="Card__title">Le délice des sens</h3>
+                        <p class="Card__city">Folie-Méricourt</p>
+                    </a>
+                    <div class="Card__content--right">
+                        <label for="like-four">
+                            <input type="checkbox" name="like" id="like-four">
+                            <span class="Hearts"><i class="Heart Heart--empty far fa-heart "></i><i class="Heart Heart--full fas fa-heart "></i></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="Footer">
         <h4 class="Footer__Title">ohmyfood</h4>

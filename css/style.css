@@ -50,6 +50,7 @@ label input {
   display: none;
 }
 label .Hearts {
+  display: inline-block;
   position: relative;
   height: 24px;
   width: 24px;
