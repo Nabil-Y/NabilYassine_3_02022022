@@ -4,6 +4,9 @@ body {
     font-family: $font-text;
     text-align: center;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation: loader 0.1s forwards 2.4s;
 }
 
 section {
@@ -19,7 +22,79 @@ label {
     cursor: pointer;
 }
 
+/* Loader */
+
+.Loader {
+    @extend .center-all;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: $grey-light;
+    position: absolute;
+    z-index: 1;
+    animation: disappear 1s ease 2.5s forwards;
+
+    &__text {
+        padding: 2rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+        background: linear-gradient(45deg, $primary-color, $secondary-color);
+        background-clip: text;
+        color: transparent;
+        animation: appear 0.5s ease;
+    }
+
+    &__circle {
+        height:100px;
+        width: 100px;
+        border: solid 15px $grey-dark;
+        border-top: solid 15px $secondary-color;
+        border-radius: 50%;
+        animation:spin 1s linear 3;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(16px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(120vw) scaleX(0);
+        opacity: 0;
+    }
+}
+
 /* Animations */
+
+@keyframes loader {
+    from {
+        overflow-y: hidden;
+    }
+    to {
+        overflow-y: auto;
+    }
+}
 
 li a:hover {
     color: $primary-color;
@@ -88,5 +163,57 @@ label {
         }
     }
 
+
+}
+
+/* Media Queries */
+
+@media screen and (min-width:460px) {
+
+    .information,
+    .Restaurants {
+        h2 {
+            text-align: center;
+        }
+    }
+    .Restaurants .Restaurants__Card,
+    .information .information__pill {
+        max-width: 425px;
+        margin: 2rem auto;
+    }
+
+    .Footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:900px) {
+
+    body {
+        display: flex;
+        flex-flow: row wrap;
+
+        header, footer {
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+
+            .wrapper {
+                width:100%;
+            }
+    
+            .Restaurants {
+                width: 100%;
+                max-height: 700px;
+                overflow: auto;
+            }
+        }
+    }
 
 }

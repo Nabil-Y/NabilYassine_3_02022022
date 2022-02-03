@@ -73,7 +73,7 @@
         @extend .center-all;
         content: "1";
         position: absolute;
-        left: -3%;
+        left: -10px;
         top: 35%;
         width: 20px;
         height: 20px;
@@ -88,7 +88,8 @@
         @extend .center-all;
         content: "2";
         position: absolute;
-        left: -3%;
+        left: -10px;
+        top: 35%;
         width: 20px;
         height: 20px;
         font-weight: normal;
@@ -102,7 +103,8 @@
         @extend .center-all;
         content: "3";
         position: absolute;
-        left: -3%;
+        left: -10px;
+        top: 35%;
         width: 20px;
         height: 20px;
         font-weight: normal;
