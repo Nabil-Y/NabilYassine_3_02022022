@@ -13,14 +13,79 @@ section {
 a {
     color: inherit;
     text-decoration: none;
+}
 
-    &:hover {
-        h3 {
+label {
+    cursor: pointer;
+}
+
+/* Animations */
+
+li a:hover {
+    color: $primary-color;
+}
+
+.Restaurants__Card {
+    a:hover {
+        .Card__title {
             color: $primary-color;
+        }
+
+        & + .Card__content {
+            .Card__title {
+                color: $primary-color;  
+            }
         }
     }
 }
 
-li:hover {
-    color: $primary-color;
+label {
+
+    input {
+        display: none;
+    }
+
+    .Hearts {
+        position: relative;
+        height:24px;
+        width: 24px;
+
+        .Heart{
+            height:24px;
+            width: 24px;
+            @extend .center-all;
+    
+            &--empty {
+                position: absolute;
+                top:0;
+                left:0;
+                transform: scaleY(1) scaleX(1);
+                transition: transform 0.4s ease;
+            }
+            &--full {
+                background: linear-gradient(180deg, $primary-color, $secondary-color);
+                background-clip: text;
+                color: transparent;
+                position: absolute;
+                top:0;
+                left:0;
+                transition: transform 0.4s ease;
+                transform: scaleY(0) scaleX(0);
+                transform-origin: center center;
+            }
+        }
+    
+    }
+
+    input:checked + .Hearts {
+        & .Heart--empty {
+            transform: scaleY(0) scaleX(0);
+        }
+        & .Heart--full {
+            transform: scaleY(1) scaleX(1);
+            transform-origin: center center;
+        }
+    }
+
+
 }
