@@ -183,17 +183,18 @@ label input:checked + .Hearts .Heart--full {
   body header, body footer {
     width: 100%;
   }
-  body main {
+  body .main {
     display: flex;
     width: 100%;
   }
-  body main__wrapper {
-    width: 100%;
+  body .main__wrapper {
+    width: 40%;
   }
-  body main .Restaurants {
-    width: 100%;
+  body .main .Restaurants {
+    width: 60%;
     max-height: 700px;
     overflow: auto;
+    scrollbar-width: none;
   }
 }
 .center-all, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .header__search, .Loader, label .Hearts .Heart {
