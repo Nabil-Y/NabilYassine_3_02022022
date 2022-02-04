@@ -1,0 +1,357 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+/* Variables */
+/* Utility Classes (extend) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+.center-all, .header__search, label .Hearts .Heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(120vw) scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: auto;
+  }
+}
+/* Fonts */
+/* Variables */
+/* Utility Classes (extend) */
+.center-all, .header__search, label .Hearts .Heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(120vw) scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: auto;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  animation: loader 0.1s forwards 2.4s;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #9356DC;
+}
+
+label {
+  cursor: pointer;
+}
+
+label input {
+  display: none;
+}
+label .Hearts {
+  display: inline-block;
+  position: relative;
+  height: 24px;
+  width: 24px;
+}
+label .Hearts .Heart {
+  height: 24px;
+  width: 24px;
+}
+label .Hearts .Heart--empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleY(1) scaleX(1);
+  transition: transform 0.4s ease;
+}
+label .Hearts .Heart--full {
+  background: linear-gradient(180deg, #9356DC, #FF76DA);
+  background-clip: text;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s ease;
+  transform: scaleY(0) scaleX(0);
+  transform-origin: center center;
+}
+label input:checked + .Hearts .Heart--empty {
+  transform: scaleY(0) scaleX(0);
+}
+label input:checked + .Hearts .Heart--full {
+  transform: scaleY(1) scaleX(1);
+  transform-origin: center center;
+}
+
+/* Fonts */
+/* Variables */
+/* Utility Classes (extend) */
+.center-all, .header__search, label .Hearts .Heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(120vw) scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: auto;
+  }
+}
+.header {
+  background: #EAEAEA;
+}
+.header__img {
+  background: #FFF;
+  box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+.header__logo {
+  width: min(60%, 300px);
+  margin: auto;
+  padding: 1rem;
+}
+.header__icon {
+  color: #6A6A6A;
+}
+.header__input {
+  background: transparent;
+  border: none;
+  margin-left: auto;
+  width: 60%;
+  padding: 12px;
+}
+.header__input[placeholder] {
+  font-weight: bold;
+}
+.header__input:focus {
+  outline: none;
+}
+
+.Menu__header {
+  display: flex;
+  align-items: center;
+  background: #FFF;
+  box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+.Menu__header .header__button {
+  transform: translateX(2rem);
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Fonts */
+/* Variables */
+/* Utility Classes (extend) */
+.center-all, label .Hearts .Heart, .header__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(120vw) scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: auto;
+  }
+}
+.Footer {
+  background: #353535;
+  padding: 2rem 1rem;
+  text-align: left;
+  color: #FFF;
+}
+.Footer__Title {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.4rem;
+}
+.Footer__Link {
+  line-height: 2;
+}
+.Footer__icon {
+  width: 24px;
+}
+
+/* Fonts */
+/* Variables */
+/* Utility Classes (extend) */
+.center-all, label .Hearts .Heart, .header__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(120vw) scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: auto;
+  }
+}
+
+/*# sourceMappingURL=stylemenu.css.map */
