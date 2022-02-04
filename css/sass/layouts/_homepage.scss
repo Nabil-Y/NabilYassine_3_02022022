@@ -1,0 +1,275 @@
+@import "../utils/variables";
+
+.Loader {
+    @extend .center-all;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: $grey-light;
+    position: absolute;
+    z-index: 1;
+    animation: disappear 1s ease 2.5s forwards;
+
+    &__wrapper {
+        animation: appear 1s ease;
+    }
+
+    &__text {
+        padding: 2rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+        background: linear-gradient(45deg, $primary-color, $secondary-color);
+        background-clip: text;
+        color: transparent;
+    }
+
+    &__circle {
+        margin: auto;
+        height:100px;
+        width: 100px;
+        border: solid 15px $grey-dark;
+        border-top: solid 15px $secondary-color;
+        border-radius: 50%;
+        animation:spin 1s linear 3;
+    }
+}
+
+.hero {
+    background: $grey-light;
+
+    &__title {
+        margin: 10px auto;
+        max-width: 70%;
+    }
+
+    &__description {
+        margin: 10px auto;
+    }
+
+    &__button {
+        margin: 1rem auto;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        color: $white;
+        background: linear-gradient(-10deg, $primary-color, $secondary-color);
+        padding: 0.8em 1.6em;
+        box-shadow: $shadow-button-light;
+        cursor: pointer;
+        transition: filter ease 0.5s, box-shadow ease 0.5s;
+
+        &:hover {
+            filter: brightness(110%);
+            box-shadow: $shadow-button-dark;
+        }
+    }
+}
+
+.information {
+
+    &__pill:last-child {
+        background: $primary-color-light;
+
+        .pill__icon {
+            color: $primary-color
+        }
+    }
+
+    &__title {
+        text-align: left;
+        margin: 1rem 0;
+    }
+
+    &__pill {
+        display: flex;
+        background: $grey-light;
+        border-radius: 20px;
+        padding: 1.4rem 2rem;
+        margin: 2rem 1rem;
+        box-shadow: $shadow-big;
+        font-weight: bold;
+        position: relative;
+
+        .pill {
+            &__icon {
+                @extend .center-all;
+                width: 30px;
+                margin-right: 1rem;
+            }
+
+            &__description {
+                margin-right: auto;
+            }
+        }
+    }
+
+    .pill--1::before {
+        @extend .center-all;
+        content: "1";
+        position: absolute;
+        left: -10px;
+        top: 35%;
+        width: 20px;
+        height: 20px;
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 50%;
+        background: $primary-color;
+        color: $white;
+    }
+
+    .pill--2::before {
+        @extend .center-all;
+        content: "2";
+        position: absolute;
+        left: -10px;
+        top: 35%;
+        width: 20px;
+        height: 20px;
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 50%;
+        background: $primary-color;
+        color: $white;
+    }
+
+    .pill--3::before {
+        @extend .center-all;
+        content: "3";
+        position: absolute;
+        left: -10px;
+        top: 35%;
+        width: 20px;
+        height: 20px;
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 50%;
+        background: $primary-color;
+        color: $white;
+    }
+
+}
+
+.Restaurants {
+    background: $grey-light;
+
+    &__title {
+        text-align: left;
+    }
+
+    &__Card {
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 2rem 0;
+        box-shadow: $shadow-big;
+
+        a {
+            display: block;
+        }
+
+        a:hover {
+            .Card__title {
+                color: $primary-color;
+            }
+    
+            & + .Card__content {
+                .Card__title {
+                    color: $primary-color;  
+                }
+            }
+        }
+
+        &--new {
+            position: relative;
+
+            &::before {
+                content: "Nouveau";
+                @extend .center-all;
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                width: 80px;
+                height:30px;
+                background: $tertiary-color;
+                color: $tertiary-dark;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .Card {
+        &__img {
+            max-height: 180px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center bottom;
+        }
+
+        &__img--big {
+            object-position: center -170px;
+        }
+
+        &__content {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .6rem 1rem;
+        }
+    }
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width:460px) {
+
+    .information,
+    .Restaurants {
+        h2 {
+            text-align: center;
+        }
+    }
+    .Restaurants .Restaurants__Card,
+    .information .information__pill {
+        max-width: 425px;
+        margin: 2rem auto;
+    }
+
+    .Footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:900px) {
+
+    body {
+        display: flex;
+        flex-flow: row wrap;
+
+        header, footer {
+            width: 100%;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+
+            &__wrapper {
+                width:40%;
+            }
+    
+            .Restaurants {
+                width: 60%;
+                max-height: 700px;
+                overflow: auto;
+                scrollbar-width: thin;
+            }
+        }
+    }
+
+}
