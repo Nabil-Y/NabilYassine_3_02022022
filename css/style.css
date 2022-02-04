@@ -6,8 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
-.center-all, .Loader, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .header__search, label .Hearts .Heart {
+.center-all, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .Loader, .header__search, label .Hearts .Heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +51,7 @@
 /* Fonts */
 /* Variables */
 /* Utility Classes (extend) */
-.center-all, .Loader, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .header__search, label .Hearts .Heart {
+.center-all, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .Loader, .header__search, label .Hearts .Heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +161,7 @@ label input:checked + .Hearts .Heart--full {
 /* Fonts */
 /* Variables */
 /* Utility Classes (extend) */
-.center-all, .Loader, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .header__search, label .Hearts .Heart {
+.center-all, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .Loader, .header__search, label .Hearts .Heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +235,7 @@ label input:checked + .Hearts .Heart--full {
 /* Fonts */
 /* Variables */
 /* Utility Classes (extend) */
-.center-all, .Loader, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, label .Hearts .Heart, .header__search {
+.center-all, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .Loader, label .Hearts .Heart, .header__search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,6 +277,99 @@ label input:checked + .Hearts .Heart--full {
     overflow-y: auto;
   }
 }
+.Footer {
+  background: #353535;
+  padding: 2rem 1rem;
+  text-align: left;
+  color: #FFF;
+}
+.Footer__Title {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.4rem;
+}
+.Footer__Link {
+  line-height: 2;
+}
+.Footer__icon {
+  width: 24px;
+}
+
+/* Fonts */
+/* Variables */
+/* Utility Classes (extend) */
+.center-all, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .Loader, label .Hearts .Heart, .header__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(120vw) scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: auto;
+  }
+}
+.Loader {
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #F6F6F6;
+  position: absolute;
+  z-index: 1;
+  animation: disappear 1s ease 2.5s forwards;
+}
+.Loader__wrapper {
+  animation: appear 1s ease;
+}
+.Loader__text {
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background: linear-gradient(45deg, #9356DC, #FF76DA);
+  background-clip: text;
+  color: transparent;
+}
+.Loader__circle {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  border: solid 15px #EAEAEA;
+  border-top: solid 15px #FF76DA;
+  border-radius: 50%;
+  animation: spin 1s linear 3;
+}
+
 .hero {
   background: #F6F6F6;
 }
@@ -387,6 +479,12 @@ label input:checked + .Hearts .Heart--full {
 .Restaurants__Card a {
   display: block;
 }
+.Restaurants__Card a:hover .Card__title {
+  color: #9356DC;
+}
+.Restaurants__Card a:hover + .Card__content .Card__title {
+  color: #9356DC;
+}
 .Restaurants__Card--new {
   position: relative;
 }
@@ -416,151 +514,6 @@ label input:checked + .Hearts .Heart--full {
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 1rem;
-}
-
-/* Fonts */
-/* Variables */
-/* Utility Classes (extend) */
-.center-all, .Loader, label .Hearts .Heart, .header__search, .information__pill .pill__icon, .information .pill--1::before, .information .pill--2::before, .information .pill--3::before, .Restaurants__Card--new::before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Animations */
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes appear {
-  from {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes disappear {
-  from {
-    opacity: 1;
-  }
-  to {
-    transform: translateX(120vw) scaleX(0);
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: auto;
-  }
-}
-.Footer {
-  background: #353535;
-  padding: 2rem 1rem;
-  text-align: left;
-  color: #FFF;
-}
-.Footer__Title {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.4rem;
-}
-.Footer__Link {
-  line-height: 2;
-}
-.Footer__icon {
-  width: 24px;
-}
-
-/* Fonts */
-/* Variables */
-/* Utility Classes (extend) */
-.center-all, .Loader, label .Hearts .Heart, .header__search, .information__pill .pill__icon, .information .pill--1::before, .information .pill--2::before, .information .pill--3::before, .Restaurants__Card--new::before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Animations */
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes appear {
-  from {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes disappear {
-  from {
-    opacity: 1;
-  }
-  to {
-    transform: translateX(120vw) scaleX(0);
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: auto;
-  }
-}
-.Loader {
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  background: #F6F6F6;
-  position: absolute;
-  z-index: 1;
-  animation: disappear 1s ease 2.5s forwards;
-}
-.Loader__wrapper {
-  animation: appear 1s ease;
-}
-.Loader__text {
-  padding: 2rem;
-  font-weight: bold;
-  font-size: 1.4rem;
-  background: linear-gradient(45deg, #9356DC, #FF76DA);
-  background-clip: text;
-  color: transparent;
-}
-.Loader__circle {
-  margin: auto;
-  height: 100px;
-  width: 100px;
-  border: solid 15px #EAEAEA;
-  border-top: solid 15px #FF76DA;
-  border-radius: 50%;
-  animation: spin 1s linear 3;
-}
-
-.Restaurants__Card a:hover .Card__title {
-  color: #9356DC;
-}
-.Restaurants__Card a:hover + .Card__content .Card__title {
-  color: #9356DC;
 }
 
 /* Media Queries */
