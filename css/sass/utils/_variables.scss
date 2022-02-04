@@ -1,4 +1,8 @@
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
+
+/* Variables */
 
 $primary-color: #9356DC;
 $secondary-color: #FF76DA;
@@ -23,8 +27,51 @@ $shadow-button-dark: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
 $font-title: 'Shrikhand', cursive;
 $font-text: 'Roboto', sans-serif;
 
+/* Utility Classes (extend) */
+
 .center-all {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Animations */ 
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(16px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(120vw) scaleX(0);
+        opacity: 0;
+    }
+}
+
+@keyframes loader {
+    from {
+        overflow-y: hidden;
+    }
+    to {
+        overflow-y: auto;
+    }
 }
