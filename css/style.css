@@ -6,7 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 .center-all, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .Loader, .header__search, label .Hearts .Heart {
   display: flex;
   justify-content: center;
@@ -99,8 +98,6 @@ body {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
-  overflow-y: hidden;
-  animation: loader 0.1s forwards 2.4s;
 }
 
 section {
@@ -354,6 +351,11 @@ label input:checked + .Hearts .Heart--full {
     overflow-y: auto;
   }
 }
+body {
+  overflow-y: hidden;
+  animation: loader 0.1s forwards 2.4s;
+}
+
 .Loader {
   flex-direction: column;
   height: 100vh;
@@ -571,51 +573,6 @@ label input:checked + .Hearts .Heart--full {
     max-height: 700px;
     overflow: auto;
     scrollbar-width: thin;
-  }
-}
-/* Fonts */
-/* Variables */
-/* Utility Classes (extend) */
-.center-all, label .Hearts .Heart, .header__search, .Loader, .information__pill .pill__icon, .information .pill--1::before, .information .pill--2::before, .information .pill--3::before, .Restaurants__Card--new::before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Animations */
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes appear {
-  from {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes disappear {
-  from {
-    opacity: 1;
-  }
-  to {
-    transform: translateX(120vw) scaleX(0);
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: auto;
   }
 }
 

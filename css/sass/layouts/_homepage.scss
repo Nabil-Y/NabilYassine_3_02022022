@@ -1,5 +1,10 @@
 @import "../utils/variables";
 
+body {
+    overflow-y: hidden;
+    animation: loader 0.1s forwards 2.4s;
+}
+
 .Loader {
     @extend .center-all;
     flex-direction: column;

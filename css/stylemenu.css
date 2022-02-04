@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
-.center-all, .header__search, label .Hearts .Heart {
+.center-all, .menu__pill__column .pill__icon, .header__search, label .Hearts .Heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@
 /* Fonts */
 /* Variables */
 /* Utility Classes (extend) */
-.center-all, .header__search, label .Hearts .Heart {
+.center-all, .menu__pill__column .pill__icon, .header__search, label .Hearts .Heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,8 +98,6 @@ body {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
-  overflow-y: hidden;
-  animation: loader 0.1s forwards 2.4s;
 }
 
 section {
@@ -161,7 +159,7 @@ label input:checked + .Hearts .Heart--full {
 /* Fonts */
 /* Variables */
 /* Utility Classes (extend) */
-.center-all, .header__search, label .Hearts .Heart {
+.center-all, .menu__pill__column .pill__icon, .header__search, label .Hearts .Heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,7 +247,7 @@ label input:checked + .Hearts .Heart--full {
 /* Fonts */
 /* Variables */
 /* Utility Classes (extend) */
-.center-all, label .Hearts .Heart, .header__search {
+.center-all, .menu__pill__column .pill__icon, label .Hearts .Heart, .header__search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -311,7 +309,7 @@ label input:checked + .Hearts .Heart--full {
 /* Fonts */
 /* Variables */
 /* Utility Classes (extend) */
-.center-all, label .Hearts .Heart, .header__search {
+.center-all, .menu__pill__column .pill__icon, label .Hearts .Heart, .header__search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,6 +350,89 @@ label input:checked + .Hearts .Heart--full {
   to {
     overflow-y: auto;
   }
+}
+.main {
+  background: #F6F6F6;
+}
+.main__img {
+  position: relative;
+}
+.main__title {
+  background: #F6F6F6;
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.main__title h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.6rem;
+}
+
+.menu {
+  padding-top: calc(70px + 2rem);
+}
+.menu__title {
+  text-align: left;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.menu__title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 4rem;
+  height: 0.3rem;
+  background: #99E2D0;
+}
+.menu__pill {
+  display: flex;
+  justify-content: space-between;
+  background: #FFF;
+  border-radius: 20px;
+  overflow: hidden;
+  max-height: 70px;
+}
+.menu__pill__column {
+  min-width: 0;
+}
+.menu__pill__column:last-child {
+  display: flex;
+  flex-shrink: 0;
+}
+.menu__pill__column .pill__title, .menu__pill__column .pill__description {
+  text-align: left;
+  padding: 0.6rem;
+  padding-left: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu__pill__column .pill__title {
+  padding-bottom: 0.2rem;
+}
+.menu__pill__column .pill__description {
+  padding-top: 0.2rem;
+}
+.menu__pill__column .pill__price {
+  align-self: flex-end;
+  font-weight: bold;
+  padding: 0.6rem;
+  padding-right: 1rem;
+}
+.menu__pill__column .pill__icon {
+  color: #FFF;
+  background: #99E2D0;
+  height: 100%;
+  width: 60px;
 }
 
 /*# sourceMappingURL=stylemenu.css.map */

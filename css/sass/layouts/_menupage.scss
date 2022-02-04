@@ -1,1 +1,95 @@
 @import "../utils/variables";
+
+.main {
+    background: $grey-light;
+
+    &__img {
+        position: relative;
+    }
+
+    &__title {
+        background: $grey-light;
+        position: absolute;
+        bottom:-70px;
+        left:0;
+        right:0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        h1 {
+            font-family: $font-title;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.menu {
+    padding-top: calc(70px + 2rem);
+     
+    &__title {
+        text-align: left;
+        font-weight: normal;
+        position: relative;
+        margin-bottom: 2rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom:-10px;
+            left:0;
+            width: 4rem;
+            height: 0.3rem;
+            background: $tertiary-color;
+        }
+    }
+
+    &__pill {
+        display: flex;
+        justify-content: space-between;
+        background: $white;
+        border-radius: 20px;
+        overflow: hidden;
+        max-height: 70px;
+        
+        &__column {
+            min-width: 0;
+            &:last-child {
+                display: flex;
+                flex-shrink: 0;
+            }
+            .pill{
+                &__title, &__description {
+                    text-align: left;
+                    padding: 0.6rem;
+                    padding-left: 1rem;
+                    overflow: hidden;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
+                }
+                &__title {
+                    padding-bottom: 0.2rem;
+                }
+                &__description {
+                    padding-top: 0.2rem;
+                }
+                &__price {
+                    align-self: flex-end;
+                    font-weight: bold;
+                    padding: 0.6rem;
+                    padding-right: 1rem;
+                }
+                &__icon {
+                    @extend .center-all;
+                    color: $white;
+                    background: $tertiary-color;
+                    height: 100%;
+                    width: 60px;
+                }
+            }
+        }
+    }
+}
