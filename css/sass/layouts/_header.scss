@@ -1,0 +1,41 @@
+@import "../utils/variables";
+
+.header {
+    background: $grey-dark;
+
+    &__img {
+        background: $white;
+        box-shadow: $shadow-small;
+    }
+
+    &__logo {
+        max-width: 300px;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    &__search {
+        @extend .center-all;
+    }
+
+    &__icon {
+        color: #6A6A6A;
+    }
+
+    &__input {
+        background: transparent;
+        border:none;
+        margin-left: auto;
+        width: 60%;
+        padding: 12px;
+
+
+        &[placeholder] {
+            font-weight: bold;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
