@@ -35,6 +35,24 @@ $font-text: 'Roboto', sans-serif;
     align-items: center;
 }
 
+.button--style {
+    margin: 1rem auto;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    color: $white;
+    background: linear-gradient(-10deg, $primary-color, $secondary-color);
+    box-shadow: $shadow-button-light;
+    cursor: pointer;
+    transition: filter ease 0.5s, box-shadow ease 0.5s;
+
+    &:hover {
+        filter: brightness(110%);
+        box-shadow: $shadow-button-dark;
+    }
+}
+
+
 /* Animations */ 
 
 @keyframes spin {

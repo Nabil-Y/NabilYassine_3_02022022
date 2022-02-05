@@ -53,21 +53,8 @@ body {
     }
 
     &__button {
-        margin: 1rem auto;
-        border: none;
-        border-radius: 50px;
-        font-weight: bold;
-        color: $white;
-        background: linear-gradient(-10deg, $primary-color, $secondary-color);
         padding: 0.8em 1.6em;
-        box-shadow: $shadow-button-light;
-        cursor: pointer;
-        transition: filter ease 0.5s, box-shadow ease 0.5s;
-
-        &:hover {
-            filter: brightness(110%);
-            box-shadow: $shadow-button-dark;
-        }
+        @extend .button--style;
     }
 }
 

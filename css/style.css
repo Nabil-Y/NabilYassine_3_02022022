@@ -12,6 +12,22 @@
   align-items: center;
 }
 
+.button--style, .hero__button {
+  margin: 1rem auto;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #FFF;
+  background: linear-gradient(-10deg, #9356DC, #FF76DA);
+  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: filter ease 0.5s, box-shadow ease 0.5s;
+}
+.button--style:hover, .hero__button:hover {
+  filter: brightness(110%);
+  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -55,6 +71,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button--style, .hero__button {
+  margin: 1rem auto;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #FFF;
+  background: linear-gradient(-10deg, #9356DC, #FF76DA);
+  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: filter ease 0.5s, box-shadow ease 0.5s;
+}
+.button--style:hover, .hero__button:hover {
+  filter: brightness(110%);
+  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Animations */
@@ -165,6 +197,22 @@ label input:checked + .Hearts .Heart--full {
   align-items: center;
 }
 
+.button--style, .hero__button {
+  margin: 1rem auto;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #FFF;
+  background: linear-gradient(-10deg, #9356DC, #FF76DA);
+  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: filter ease 0.5s, box-shadow ease 0.5s;
+}
+.button--style:hover, .hero__button:hover {
+  filter: brightness(110%);
+  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -253,6 +301,22 @@ label input:checked + .Hearts .Heart--full {
   align-items: center;
 }
 
+.button--style, .hero__button {
+  margin: 1rem auto;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #FFF;
+  background: linear-gradient(-10deg, #9356DC, #FF76DA);
+  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: filter ease 0.5s, box-shadow ease 0.5s;
+}
+.button--style:hover, .hero__button:hover {
+  filter: brightness(110%);
+  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -313,6 +377,22 @@ label input:checked + .Hearts .Heart--full {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button--style, .hero__button {
+  margin: 1rem auto;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #FFF;
+  background: linear-gradient(-10deg, #9356DC, #FF76DA);
+  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: filter ease 0.5s, box-shadow ease 0.5s;
+}
+.button--style:hover, .hero__button:hover {
+  filter: brightness(110%);
+  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Animations */
@@ -398,20 +478,7 @@ body {
   margin: 10px auto;
 }
 .hero__button {
-  margin: 1rem auto;
-  border: none;
-  border-radius: 50px;
-  font-weight: bold;
-  color: #FFF;
-  background: linear-gradient(-10deg, #9356DC, #FF76DA);
   padding: 0.8em 1.6em;
-  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: filter ease 0.5s, box-shadow ease 0.5s;
-}
-.hero__button:hover {
-  filter: brightness(110%);
-  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .information__pill:last-child {
