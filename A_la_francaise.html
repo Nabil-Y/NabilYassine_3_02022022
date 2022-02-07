@@ -18,7 +18,7 @@
 
     <main class="main">
 
-        <div class="main__img">
+        <div class="main__top">
             <img class="main__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat du restaurant À la française">
             <div class="main__title">
                 <h1>À la française</h1>
@@ -37,41 +37,47 @@
                 <h2 class="menu__title">ENTRÉES</h2> 
 
                 
-                    <div class="menu__pill">
+                <label for="Tartare">
+                    <div class="menu__pill mp1">
                         <div class="menu__pill__column">
                             <h3 class="pill__title">Tartare de poulpe acidulé</h3>
                             <p class="pill__description">Aux zestes d'orange</p>
                         </div>
                         <div class="menu__pill__column">
                             <p class="pill__price">25€</p>
-                            <i class="pill__icon fas fa-check-circle fa-lg"></i>
+                            <input type="radio" name="entree" id="Tartare">
+                            <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
                         </div>
                     </div>
-                    <input type="radio" name="entree" id="Tartare">
+                </label>
          
-                <div class="menu__pill">
-                    <div class="menu__pill__column">
-                        <h3 class="pill__title">Velouté de légumes d'antan</h3>
-                        <p class="pill__description">Carotte, panais, topinambour</p>
+                <label for="Velouté">
+                    <div class="menu__pill mp2">
+                        <div class="menu__pill__column">
+                            <h3 class="pill__title">Velouté de légumes d'antan</h3>
+                            <p class="pill__description">Carotte, panais, topinambour</p>
+                        </div>
+                        <div class="menu__pill__column">
+                            <p class="pill__price">35€</p>
+                            <input type="radio" name="entree" id="Velouté">
+                            <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
                     </div>
-                    <div class="menu__pill__column">
-                        <p class="pill__price">35€</p>
-                        <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
-                    </div>
-                </div>
-                <input type="radio" name="entree" id="Velouté">
+                </label>
        
-                <div class="menu__pill">
-                    <div class="menu__pill__column">
-                        <h3 class="pill__title">Soupe à l'oignon</h3>
-                        <p class="pill__description">Revisitée</p>
+                <label for="Soupe">
+                    <div class="menu__pill mp3">
+                        <div class="menu__pill__column">
+                            <h3 class="pill__title">Soupe à l'oignon</h3>
+                            <p class="pill__description">Revisitée</p>
+                        </div>
+                        <div class="menu__pill__column">
+                            <p class="pill__price">20€</p>
+                            <input type="radio" name="entree" id="Soupe">
+                            <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
                     </div>
-                    <div class="menu__pill__column">
-                        <p class="pill__price">20€</p>
-                        <i class="pill__icon fas fa-check-circle fa-lg"></i>
-                    </div>
-                </div>
-                <input type="radio" name="entree" id="Soupe">
+                </label>
 
             </div>
 
@@ -80,41 +86,47 @@
 
                 <h2 class="menu__title">PLATS</h2> 
 
-                <div class="menu__pill">
-                    <div class="menu__pill__column">
-                        <h3 class="pill__title">Coquilles Saint-Jacques</h3>
-                        <p class="pill__description">Accompagnées d'une purée de panais</p>
-                    </div>
-                    <div class="menu__pill__column">
-                        <p class="pill__price">40€</p>
-                        <i class="pill__icon fas fa-check-circle fa-lg"></i>
-                    </div>
-                </div>
-                <input type="radio" name="plats" id="Coquilles">
+                <label for="Coquilles">
+                    <div class="menu__pill mp4">
+                        <div class="menu__pill__column">
+                            <h3 class="pill__title">Coquilles Saint-Jacques</h3>
+                            <p class="pill__description">Accompagnées d'une purée de panais</p>
+                        </div>
+                        <div class="menu__pill__column">
+                            <p class="pill__price">40€</p>
+                            <input type="radio" name="plats" id="Coquilles">
+                            <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
+                    </div>  
+                </label>
          
-                <div class="menu__pill">
-                    <div class="menu__pill__column">
-                        <h3 class="pill__title">Magret de canard</h3>
-                        <p class="pill__description">Et parmentier de pommes de terre</p>
+                <label for="Magret">
+                    <div class="menu__pill mp5">
+                        <div class="menu__pill__column">
+                            <h3 class="pill__title">Magret de canard</h3>
+                            <p class="pill__description">Et parmentier de pommes de terre</p>
+                        </div>
+                        <div class="menu__pill__column">
+                            <p class="pill__price">35€</p>
+                            <input type="radio" name="plats" id="Magret">
+                            <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
                     </div>
-                    <div class="menu__pill__column">
-                        <p class="pill__price">35€</p>
-                        <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
-                    </div>
-                </div>
-                <input type="radio" name="plats" id="Magret">
+                </label>
        
-                <div class="menu__pill">
-                    <div class="menu__pill__column">
-                        <h3 class="pill__title">Pigeonneau d’Ille-et-Vilaine</h3>
-                        <p class="pill__description">Sur son lit de gnocchis aux légumes</p>
+                <label for="Pigeonneau">
+                    <div class="menu__pill mp6">
+                        <div class="menu__pill__column">
+                            <h3 class="pill__title">Pigeonneau d’Ille-et-Vilaine</h3>
+                            <p class="pill__description">Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <div class="menu__pill__column">
+                            <p class="pill__price">44€</p>
+                            <input type="radio" name="plats" id="Pigeonneau">
+                            <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
                     </div>
-                    <div class="menu__pill__column">
-                        <p class="pill__price">44€</p>
-                        <i class="pill__icon fas fa-check-circle fa-lg"></i>
-                    </div>
-                </div>
-                <input type="radio" name="plats" id="Pigeonneau">
+                </label>
 
             
             </div>
@@ -125,41 +137,48 @@
                 <h2 class="menu__title">DESSERTS</h2> 
 
                 
-                    <div class="menu__pill">
+                <label for="Petales">
+                    <div class="menu__pill mp7">
                         <div class="menu__pill__column">
                             <h3 class="pill__title">Pétales de violettes glacés</h3>
                             <p class="pill__description">Et purée de noisettes</p>
                         </div>
                         <div class="menu__pill__column">
                             <p class="pill__price">18€</p>
-                            <i class="pill__icon fas fa-check-circle fa-lg"></i>
+                            <input type="radio" name="desserts" id="Petales">
+                            <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
                         </div>
                     </div>
-                    <input type="radio" name="desserts" id="Petales">
+                </label>
          
-                <div class="menu__pill">
-                    <div class="menu__pill__column">
-                        <h3 class="pill__title">Fondant au chocolat</h3>
-                        <p class="pill__description">Revisité</p>
+                <label for="Fondant">
+                    <div class="menu__pill mp8">
+                        <div class="menu__pill__column">
+                            <h3 class="pill__title">Fondant au chocolat</h3>
+                            <p class="pill__description">Revisité</p>
+                        </div>
+                        <div class="menu__pill__column">
+                            <p class="pill__price">22€</p>
+                            <input type="radio" name="desserts" id="Fondant">
+                            <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
                     </div>
-                    <div class="menu__pill__column">
-                        <p class="pill__price">22€</p>
-                        <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
-                    </div>
-                </div>
-                <input type="radio" name="desserts" id="Fondant">
+                </label>
        
-                <div class="menu__pill">
-                    <div class="menu__pill__column">
-                        <h3 class="pill__title">Millefeuille croustillant</h3>
-                        <p class="pill__description">Myrtilles et pâte d’amande</p>
+                <label for="Millefeuille">
+                    <div class="menu__pill mp9">
+                        <div class="menu__pill__column">
+                            <h3 class="pill__title">Millefeuille croustillant</h3>
+                            <p class="pill__description">Myrtilles et pâte d’amande</p>
+                        </div>
+                        <div class="menu__pill__column">
+                            <p class="pill__price">23€</p>
+                            <input type="radio" name="desserts" id="Millefeuille">
+                            <div class="pill__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        </div>
                     </div>
-                    <div class="menu__pill__column">
-                        <p class="pill__price">23€</p>
-                        <i class="pill__icon fas fa-check-circle fa-lg"></i>
-                    </div>
-                </div>
-                <input type="radio" name="desserts" id="Millefeuille">
+                </label>
+
             </div>
 
             <button class="menu__button">Commander</button>

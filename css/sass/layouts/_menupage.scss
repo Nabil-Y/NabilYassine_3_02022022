@@ -3,11 +3,12 @@
 .main {
     background: $grey-light;
 
-    &__img {
+    &__top {
         position: relative;
     }
 
     &__title {
+        margin: 0 auto;
         background: $grey-light;
         position: absolute;
         bottom:-70px;
@@ -29,6 +30,12 @@
 
 .menu {
     padding-top: calc(70px + 2rem);
+    margin: 0 auto;
+
+    label {
+        display: block;
+        margin-bottom: 1rem;
+    }
 
     & > * {
         margin-bottom: 1.4rem;
@@ -43,8 +50,7 @@
         text-align: left;
         font-weight: normal;
         position: relative;
-        margin-left: 1rem;
-        margin-bottom: 2rem;
+        margin: 2rem 1rem;
         font-size: 1.4rem;
 
         &::before {
@@ -66,6 +72,14 @@
         overflow: hidden;
         max-height: 70px;
         box-shadow: $shadow-small;
+        opacity: 0;
+
+        input[type=radio]:checked + .pill__icon {
+            width: 60px;
+            i {
+                animation: spin 0.3s linear forwards;;
+            }
+        }
         
         &__column {
             min-width: 0;
@@ -98,10 +112,72 @@
                     @extend .center-all;
                     color: $white;
                     background: $tertiary-color;
+                    overflow: hidden;
                     height: 100%;
-                    width: 60px;
+                    width: 0;
+                    transition: width 0.3s ease;
                 }
             }
         }
     }
+}
+
+/* Media Queries */
+
+@media screen and (min-width:460px) {
+
+    .main__title {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__pill {
+            width: 428px;
+        }
+    }
+
+    .Footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+
+}
+
+@media screen and (min-width:900px) {
+
+    .main {
+        display: flex;
+
+        &__top {
+            display: flex;
+            align-self: flex-start;
+            width: 50%;
+            padding: 0 1rem;
+            margin: auto;
+            
+        }
+
+        &__img {
+            width: min(700px,100%);
+            height: min(700px,100%);
+            margin: auto;
+            border-radius: 20px;
+        }
+    }
+
+    .menu {
+        width: 50%;
+        max-height: 700px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+
 }

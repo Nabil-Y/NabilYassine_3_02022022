@@ -28,6 +28,43 @@
   box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Mixin */
+.mp1 {
+  animation: appear 1s ease 0s forwards;
+}
+
+.mp2 {
+  animation: appear 1s ease 0.1s forwards;
+}
+
+.mp3 {
+  animation: appear 1s ease 0.2s forwards;
+}
+
+.mp4 {
+  animation: appear 1s ease 0.3s forwards;
+}
+
+.mp5 {
+  animation: appear 1s ease 0.4s forwards;
+}
+
+.mp6 {
+  animation: appear 1s ease 0.5s forwards;
+}
+
+.mp7 {
+  animation: appear 1s ease 0.6s forwards;
+}
+
+.mp8 {
+  animation: appear 1s ease 0.7s forwards;
+}
+
+.mp9 {
+  animation: appear 1s ease 0.8s forwards;
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -87,6 +124,43 @@
 .button--style:hover, .menu__button:hover {
   filter: brightness(110%);
   box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Mixin */
+.mp1 {
+  animation: appear 1s ease 0s forwards;
+}
+
+.mp2 {
+  animation: appear 1s ease 0.1s forwards;
+}
+
+.mp3 {
+  animation: appear 1s ease 0.2s forwards;
+}
+
+.mp4 {
+  animation: appear 1s ease 0.3s forwards;
+}
+
+.mp5 {
+  animation: appear 1s ease 0.4s forwards;
+}
+
+.mp6 {
+  animation: appear 1s ease 0.5s forwards;
+}
+
+.mp7 {
+  animation: appear 1s ease 0.6s forwards;
+}
+
+.mp8 {
+  animation: appear 1s ease 0.7s forwards;
+}
+
+.mp9 {
+  animation: appear 1s ease 0.8s forwards;
 }
 
 /* Animations */
@@ -213,6 +287,43 @@ label input:checked + .Hearts .Heart--full {
   box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Mixin */
+.mp1 {
+  animation: appear 1s ease 0s forwards;
+}
+
+.mp2 {
+  animation: appear 1s ease 0.1s forwards;
+}
+
+.mp3 {
+  animation: appear 1s ease 0.2s forwards;
+}
+
+.mp4 {
+  animation: appear 1s ease 0.3s forwards;
+}
+
+.mp5 {
+  animation: appear 1s ease 0.4s forwards;
+}
+
+.mp6 {
+  animation: appear 1s ease 0.5s forwards;
+}
+
+.mp7 {
+  animation: appear 1s ease 0.6s forwards;
+}
+
+.mp8 {
+  animation: appear 1s ease 0.7s forwards;
+}
+
+.mp9 {
+  animation: appear 1s ease 0.8s forwards;
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -317,6 +428,43 @@ label input:checked + .Hearts .Heart--full {
   box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Mixin */
+.mp1 {
+  animation: appear 1s ease 0s forwards;
+}
+
+.mp2 {
+  animation: appear 1s ease 0.1s forwards;
+}
+
+.mp3 {
+  animation: appear 1s ease 0.2s forwards;
+}
+
+.mp4 {
+  animation: appear 1s ease 0.3s forwards;
+}
+
+.mp5 {
+  animation: appear 1s ease 0.4s forwards;
+}
+
+.mp6 {
+  animation: appear 1s ease 0.5s forwards;
+}
+
+.mp7 {
+  animation: appear 1s ease 0.6s forwards;
+}
+
+.mp8 {
+  animation: appear 1s ease 0.7s forwards;
+}
+
+.mp9 {
+  animation: appear 1s ease 0.8s forwards;
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -395,6 +543,43 @@ label input:checked + .Hearts .Heart--full {
   box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Mixin */
+.mp1 {
+  animation: appear 1s ease 0s forwards;
+}
+
+.mp2 {
+  animation: appear 1s ease 0.1s forwards;
+}
+
+.mp3 {
+  animation: appear 1s ease 0.2s forwards;
+}
+
+.mp4 {
+  animation: appear 1s ease 0.3s forwards;
+}
+
+.mp5 {
+  animation: appear 1s ease 0.4s forwards;
+}
+
+.mp6 {
+  animation: appear 1s ease 0.5s forwards;
+}
+
+.mp7 {
+  animation: appear 1s ease 0.6s forwards;
+}
+
+.mp8 {
+  animation: appear 1s ease 0.7s forwards;
+}
+
+.mp9 {
+  animation: appear 1s ease 0.8s forwards;
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -434,10 +619,11 @@ label input:checked + .Hearts .Heart--full {
 .main {
   background: #F6F6F6;
 }
-.main__img {
+.main__top {
   position: relative;
 }
 .main__title {
+  margin: 0 auto;
   background: #F6F6F6;
   position: absolute;
   bottom: -70px;
@@ -457,6 +643,11 @@ label input:checked + .Hearts .Heart--full {
 
 .menu {
   padding-top: calc(70px + 2rem);
+  margin: 0 auto;
+}
+.menu label {
+  display: block;
+  margin-bottom: 1rem;
 }
 .menu > * {
   margin-bottom: 1.4rem;
@@ -468,8 +659,7 @@ label input:checked + .Hearts .Heart--full {
   text-align: left;
   font-weight: normal;
   position: relative;
-  margin-left: 1rem;
-  margin-bottom: 2rem;
+  margin: 2rem 1rem;
   font-size: 1.4rem;
 }
 .menu__title::before {
@@ -489,6 +679,13 @@ label input:checked + .Hearts .Heart--full {
   overflow: hidden;
   max-height: 70px;
   box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+.menu__pill input[type=radio]:checked + .pill__icon {
+  width: 60px;
+}
+.menu__pill input[type=radio]:checked + .pill__icon i {
+  animation: spin 0.3s linear forwards;
 }
 .menu__pill__column {
   min-width: 0;
@@ -520,8 +717,61 @@ label input:checked + .Hearts .Heart--full {
 .menu__pill__column .pill__icon {
   color: #FFF;
   background: #99E2D0;
+  overflow: hidden;
   height: 100%;
-  width: 60px;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+/* Media Queries */
+@media screen and (min-width: 460px) {
+  .main__title {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__pill {
+    width: 428px;
+  }
+
+  .Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 900px) {
+  .main {
+    display: flex;
+  }
+  .main__top {
+    display: flex;
+    align-self: flex-start;
+    width: 50%;
+    padding: 0 1rem;
+    margin: auto;
+  }
+  .main__img {
+    width: min(700px, 100%);
+    height: min(700px, 100%);
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .menu {
+    width: 50%;
+    max-height: 700px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
 }
 
 /*# sourceMappingURL=stylemenu.css.map */
