@@ -65,6 +65,10 @@
   animation: appear 1s ease 0.8s forwards;
 }
 
+.mp10 {
+  animation: appear 1s ease 0.9s forwards;
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -161,6 +165,10 @@
 
 .mp9 {
   animation: appear 1s ease 0.8s forwards;
+}
+
+.mp10 {
+  animation: appear 1s ease 0.9s forwards;
 }
 
 /* Animations */
@@ -324,6 +332,10 @@ label input:checked + .Hearts .Heart--full {
   animation: appear 1s ease 0.8s forwards;
 }
 
+.mp10 {
+  animation: appear 1s ease 0.9s forwards;
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -465,6 +477,10 @@ label input:checked + .Hearts .Heart--full {
   animation: appear 1s ease 0.8s forwards;
 }
 
+.mp10 {
+  animation: appear 1s ease 0.9s forwards;
+}
+
 /* Animations */
 @keyframes spin {
   from {
@@ -578,6 +594,10 @@ label input:checked + .Hearts .Heart--full {
 
 .mp9 {
   animation: appear 1s ease 0.8s forwards;
+}
+
+.mp10 {
+  animation: appear 1s ease 0.9s forwards;
 }
 
 /* Animations */
@@ -761,9 +781,12 @@ label input:checked + .Hearts .Heart--full {
   }
   .main__img {
     width: min(700px, 100%);
-    height: min(700px, 100%);
+    max-height: 467px;
     margin: auto;
     border-radius: 20px;
+  }
+  .main__img--big {
+    object-fit: cover;
   }
 
   .menu {

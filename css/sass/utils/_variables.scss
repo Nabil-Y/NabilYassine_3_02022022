@@ -58,7 +58,7 @@ $font-text: 'Roboto', sans-serif;
     animation: appear 1s ease $time forwards;
 }
 
-@for $i from 0 through 8 {
+@for $i from 0 through 9 {
     .mp#{$i+1} {
         @include pop(#{$i*0.1+"s"});
     }
