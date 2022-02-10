@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 /* Variables */
 /* Utility Classes (extend) */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 .center-all, .menu__pill__column .pill__icon, .header__search, label .Hearts .Heart {
   display: flex;
   justify-content: center;
@@ -105,8 +101,47 @@
     overflow-y: auto;
   }
 }
-/* Fonts */
-/* Variables */
+/* Mixin */
+.mp1 {
+  animation: appear 1s ease 0s forwards;
+}
+
+.mp2 {
+  animation: appear 1s ease 0.1s forwards;
+}
+
+.mp3 {
+  animation: appear 1s ease 0.2s forwards;
+}
+
+.mp4 {
+  animation: appear 1s ease 0.3s forwards;
+}
+
+.mp5 {
+  animation: appear 1s ease 0.4s forwards;
+}
+
+.mp6 {
+  animation: appear 1s ease 0.5s forwards;
+}
+
+.mp7 {
+  animation: appear 1s ease 0.6s forwards;
+}
+
+.mp8 {
+  animation: appear 1s ease 0.7s forwards;
+}
+
+.mp9 {
+  animation: appear 1s ease 0.8s forwards;
+}
+
+.mp10 {
+  animation: appear 1s ease 0.9s forwards;
+}
+
 /* Utility Classes (extend) */
 .center-all, .menu__pill__column .pill__icon, .header__search, label .Hearts .Heart {
   display: flex;
@@ -130,47 +165,6 @@
   box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Mixin */
-.mp1 {
-  animation: appear 1s ease 0s forwards;
-}
-
-.mp2 {
-  animation: appear 1s ease 0.1s forwards;
-}
-
-.mp3 {
-  animation: appear 1s ease 0.2s forwards;
-}
-
-.mp4 {
-  animation: appear 1s ease 0.3s forwards;
-}
-
-.mp5 {
-  animation: appear 1s ease 0.4s forwards;
-}
-
-.mp6 {
-  animation: appear 1s ease 0.5s forwards;
-}
-
-.mp7 {
-  animation: appear 1s ease 0.6s forwards;
-}
-
-.mp8 {
-  animation: appear 1s ease 0.7s forwards;
-}
-
-.mp9 {
-  animation: appear 1s ease 0.8s forwards;
-}
-
-.mp10 {
-  animation: appear 1s ease 0.9s forwards;
-}
-
 /* Animations */
 @keyframes spin {
   from {
@@ -205,6 +199,78 @@
   }
   to {
     overflow-y: auto;
+  }
+}
+/* 2 - Media Queries - Menu page */
+@media screen and (min-width: 460px) {
+  .main__title {
+    max-width: 600px;
+    margin: auto;
+  }
+  .main__img {
+    width: min(700px, 100%);
+    max-height: 467px;
+    margin: auto;
+    border-radius: 20px;
+  }
+  .main__img--big {
+    object-fit: cover;
+  }
+
+  .information h2,
+.Restaurants h2 {
+    text-align: center;
+  }
+
+  .Restaurants .Restaurants__Card,
+.information .information__pill {
+    max-width: 425px;
+    margin: 2rem auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__pill {
+    width: 428px;
+  }
+
+  .Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 900px) {
+  .main {
+    display: flex;
+    width: 100%;
+  }
+  .main__wrapper {
+    width: 40%;
+  }
+  .main .Restaurants {
+    width: 60%;
+    max-height: 700px;
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+  .main__top {
+    display: flex;
+    align-self: flex-start;
+    width: 50%;
+    padding: 0 1rem;
+    margin: auto;
+  }
+
+  .menu {
+    width: 50%;
+    max-height: 700px;
+    overflow-y: auto;
+    scrollbar-width: thin;
   }
 }
 body {
@@ -258,9 +324,9 @@ label .Hearts .Heart--full {
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 0.4s ease;
   transform: scaleY(0) scaleX(0);
   transform-origin: center center;
+  transition: transform 0.4s ease;
 }
 label input:checked + .Hearts .Heart--empty {
   transform: scaleY(0) scaleX(0);
@@ -270,108 +336,6 @@ label input:checked + .Hearts .Heart--full {
   transform-origin: center center;
 }
 
-/* Fonts */
-/* Variables */
-/* Utility Classes (extend) */
-.center-all, .menu__pill__column .pill__icon, .header__search, label .Hearts .Heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button--style, .menu__button {
-  margin: 1rem auto;
-  border: none;
-  border-radius: 50px;
-  font-weight: bold;
-  color: #FFF;
-  background: linear-gradient(-10deg, #9356DC, #FF76DA);
-  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: filter ease 0.5s, box-shadow ease 0.5s;
-}
-.button--style:hover, .menu__button:hover {
-  filter: brightness(110%);
-  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Mixin */
-.mp1 {
-  animation: appear 1s ease 0s forwards;
-}
-
-.mp2 {
-  animation: appear 1s ease 0.1s forwards;
-}
-
-.mp3 {
-  animation: appear 1s ease 0.2s forwards;
-}
-
-.mp4 {
-  animation: appear 1s ease 0.3s forwards;
-}
-
-.mp5 {
-  animation: appear 1s ease 0.4s forwards;
-}
-
-.mp6 {
-  animation: appear 1s ease 0.5s forwards;
-}
-
-.mp7 {
-  animation: appear 1s ease 0.6s forwards;
-}
-
-.mp8 {
-  animation: appear 1s ease 0.7s forwards;
-}
-
-.mp9 {
-  animation: appear 1s ease 0.8s forwards;
-}
-
-.mp10 {
-  animation: appear 1s ease 0.9s forwards;
-}
-
-/* Animations */
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes appear {
-  from {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes disappear {
-  from {
-    opacity: 1;
-  }
-  to {
-    transform: translateX(120vw) scaleX(0);
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: auto;
-  }
-}
 .header {
   background: #EAEAEA;
 }
@@ -407,6 +371,9 @@ label input:checked + .Hearts .Heart--full {
   background: #FFF;
   box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.1);
 }
+.Menu__header form {
+  width: 0;
+}
 .Menu__header .header__button {
   transform: translateX(2rem);
   font-size: 20px;
@@ -415,108 +382,6 @@ label input:checked + .Hearts .Heart--full {
   cursor: pointer;
 }
 
-/* Fonts */
-/* Variables */
-/* Utility Classes (extend) */
-.center-all, .menu__pill__column .pill__icon, label .Hearts .Heart, .header__search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button--style, .menu__button {
-  margin: 1rem auto;
-  border: none;
-  border-radius: 50px;
-  font-weight: bold;
-  color: #FFF;
-  background: linear-gradient(-10deg, #9356DC, #FF76DA);
-  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: filter ease 0.5s, box-shadow ease 0.5s;
-}
-.button--style:hover, .menu__button:hover {
-  filter: brightness(110%);
-  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Mixin */
-.mp1 {
-  animation: appear 1s ease 0s forwards;
-}
-
-.mp2 {
-  animation: appear 1s ease 0.1s forwards;
-}
-
-.mp3 {
-  animation: appear 1s ease 0.2s forwards;
-}
-
-.mp4 {
-  animation: appear 1s ease 0.3s forwards;
-}
-
-.mp5 {
-  animation: appear 1s ease 0.4s forwards;
-}
-
-.mp6 {
-  animation: appear 1s ease 0.5s forwards;
-}
-
-.mp7 {
-  animation: appear 1s ease 0.6s forwards;
-}
-
-.mp8 {
-  animation: appear 1s ease 0.7s forwards;
-}
-
-.mp9 {
-  animation: appear 1s ease 0.8s forwards;
-}
-
-.mp10 {
-  animation: appear 1s ease 0.9s forwards;
-}
-
-/* Animations */
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes appear {
-  from {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes disappear {
-  from {
-    opacity: 1;
-  }
-  to {
-    transform: translateX(120vw) scaleX(0);
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: auto;
-  }
-}
 .Footer {
   background: #353535;
   padding: 2rem 1rem;
@@ -534,108 +399,87 @@ label input:checked + .Hearts .Heart--full {
   width: 24px;
 }
 
-/* Fonts */
-/* Variables */
-/* Utility Classes (extend) */
-.center-all, .menu__pill__column .pill__icon, label .Hearts .Heart, .header__search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.button--style, .menu__button {
-  margin: 1rem auto;
-  border: none;
-  border-radius: 50px;
-  font-weight: bold;
-  color: #FFF;
-  background: linear-gradient(-10deg, #9356DC, #FF76DA);
-  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: filter ease 0.5s, box-shadow ease 0.5s;
-}
-.button--style:hover, .menu__button:hover {
-  filter: brightness(110%);
-  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
-/* Mixin */
-.mp1 {
-  animation: appear 1s ease 0s forwards;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
 }
 
-.mp2 {
-  animation: appear 1s ease 0.1s forwards;
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
-.mp3 {
-  animation: appear 1s ease 0.2s forwards;
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.2;
+  padding: 0;
 }
 
-.mp4 {
-  animation: appear 1s ease 0.3s forwards;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-.mp5 {
-  animation: appear 1s ease 0.4s forwards;
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 
-.mp6 {
-  animation: appear 1s ease 0.5s forwards;
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-.mp7 {
-  animation: appear 1s ease 0.6s forwards;
-}
-
-.mp8 {
-  animation: appear 1s ease 0.7s forwards;
-}
-
-.mp9 {
-  animation: appear 1s ease 0.8s forwards;
-}
-
-.mp10 {
-  animation: appear 1s ease 0.9s forwards;
-}
-
-/* Animations */
-@keyframes spin {
-  from {
-    transform: rotate(0);
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes appear {
-  from {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
-@keyframes disappear {
-  from {
-    opacity: 1;
-  }
-  to {
-    transform: translateX(120vw) scaleX(0);
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: auto;
-  }
-}
+/*
+    1 - Menu page
+    2 - Media Queries - Menu page
+*/
+/* 1- Menu page */
 .main {
   background: #F6F6F6;
 }
@@ -741,60 +585,6 @@ label input:checked + .Hearts .Heart--full {
   height: 100%;
   width: 0;
   transition: width 0.3s ease;
-}
-
-/* Media Queries */
-@media screen and (min-width: 460px) {
-  .main__title {
-    max-width: 600px;
-    margin: auto;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .menu__pill {
-    width: 428px;
-  }
-
-  .Footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-  }
-}
-@media screen and (min-width: 900px) {
-  .main {
-    display: flex;
-  }
-  .main__top {
-    display: flex;
-    align-self: flex-start;
-    width: 50%;
-    padding: 0 1rem;
-    margin: auto;
-  }
-  .main__img {
-    width: min(700px, 100%);
-    max-height: 467px;
-    margin: auto;
-    border-radius: 20px;
-  }
-  .main__img--big {
-    object-fit: cover;
-  }
-
-  .menu {
-    width: 50%;
-    max-height: 700px;
-    overflow-y: auto;
-    scrollbar-width: thin;
-  }
 }
 
 /*# sourceMappingURL=stylemenu.css.map */
