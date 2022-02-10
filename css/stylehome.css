@@ -1,106 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 /* Variables */
-/* Utility Classes (extend) */
-.center-all, .Restaurants__Card--new::before, .information .pill--3::before, .information .pill--2::before, .information .pill--1::before, .information__pill .pill__icon, .Loader, .header__search, label .Hearts .Heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button--style, .hero__button {
-  margin: 1rem auto;
-  border: none;
-  border-radius: 50px;
-  font-weight: bold;
-  color: #FFF;
-  background: linear-gradient(-10deg, #9356DC, #FF76DA);
-  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: filter ease 0.5s, box-shadow ease 0.5s;
-}
-.button--style:hover, .hero__button:hover {
-  filter: brightness(110%);
-  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Mixin */
-.mp1 {
-  animation: appear 1s ease 0s forwards;
-}
-
-.mp2 {
-  animation: appear 1s ease 0.1s forwards;
-}
-
-.mp3 {
-  animation: appear 1s ease 0.2s forwards;
-}
-
-.mp4 {
-  animation: appear 1s ease 0.3s forwards;
-}
-
-.mp5 {
-  animation: appear 1s ease 0.4s forwards;
-}
-
-.mp6 {
-  animation: appear 1s ease 0.5s forwards;
-}
-
-.mp7 {
-  animation: appear 1s ease 0.6s forwards;
-}
-
-.mp8 {
-  animation: appear 1s ease 0.7s forwards;
-}
-
-.mp9 {
-  animation: appear 1s ease 0.8s forwards;
-}
-
-.mp10 {
-  animation: appear 1s ease 0.9s forwards;
-}
-
-/* Animations */
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes appear {
-  from {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes disappear {
-  from {
-    opacity: 1;
-  }
-  to {
-    transform: translateX(120vw) scaleX(0);
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: auto;
-  }
-}
 /* Mixin */
 .mp1 {
   animation: appear 1s ease 0s forwards;
@@ -273,6 +173,82 @@
     scrollbar-width: thin;
   }
 }
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.2;
+  padding: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -399,87 +375,6 @@ label input:checked + .Hearts .Heart--full {
   width: 24px;
 }
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul,
-ol {
-  list-style: none;
-  padding-left: 0;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.2;
-  padding: 0;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-*::before,
-*::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-/*
-    1 - Home page
-    2 - Media Queries - Home page
-*/
-/* 1- Home page */
 body {
   overflow-y: hidden;
   animation: loader 0.1s forwards 2.4s;

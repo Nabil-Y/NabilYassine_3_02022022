@@ -3,9 +3,10 @@
 @import "./utils/animations";
 @import "./utils/media-queries";
 
-@import "./base/general";
-@import "./base/header";
-@import "./base/footer";
 @import "./base/reset";
+@import "./base/general";
 
-@import "./layouts/menupage";
+@import "./layouts/header";
+@import "./layouts/footer";
+
+@import "./pages/menupage";
