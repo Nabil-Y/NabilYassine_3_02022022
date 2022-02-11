@@ -1,7 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins-classes";
 @import "./utils/animations";
-@import "./utils/media-queries";
 
 @import "./base/reset";
 @import "./base/general";
@@ -10,3 +9,5 @@
 @import "./layouts/footer";
 
 @import "./pages/menupage";
+
+@import "./utils/media-queries";

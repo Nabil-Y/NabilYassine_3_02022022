@@ -101,78 +101,6 @@
     overflow-y: auto;
   }
 }
-/* 2 - Media Queries - Menu page */
-@media screen and (min-width: 460px) {
-  .main__title {
-    max-width: 600px;
-    margin: auto;
-  }
-  .main__img {
-    width: min(700px, 100%);
-    max-height: 467px;
-    margin: auto;
-    border-radius: 20px;
-  }
-  .main__img--big {
-    object-fit: cover;
-  }
-
-  .information h2,
-.Restaurants h2 {
-    text-align: center;
-  }
-
-  .Restaurants .Restaurants__Card,
-.information .information__pill {
-    max-width: 425px;
-    margin: 2rem auto;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .menu__pill {
-    width: 428px;
-  }
-
-  .Footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 900px) {
-  .main {
-    display: flex;
-    width: 100%;
-  }
-  .main__wrapper {
-    width: 40%;
-  }
-  .main .Restaurants {
-    width: 60%;
-    max-height: 700px;
-    overflow: auto;
-    scrollbar-width: thin;
-  }
-  .main__top {
-    display: flex;
-    align-self: flex-start;
-    width: 50%;
-    padding: 0 1rem;
-    margin: auto;
-  }
-
-  .menu {
-    width: 50%;
-    max-height: 700px;
-    overflow-y: auto;
-    scrollbar-width: thin;
-  }
-}
 /* Box sizing rules */
 *,
 *::before,
@@ -542,6 +470,80 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 1rem;
+}
+
+/* Media Queries - Tablette */
+@media screen and (min-width: 900px) {
+  .main {
+    display: flex;
+    width: 100%;
+  }
+  .main__wrapper {
+    width: 40%;
+  }
+  .main .Restaurants {
+    width: 60%;
+    max-height: 700px;
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+  .main__top {
+    display: flex;
+    align-self: flex-start;
+    width: 50%;
+    padding: 0 1rem;
+    margin: auto;
+  }
+
+  .menu {
+    width: 50%;
+    max-height: 700px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+}
+/* Media Queries - Mobile */
+@media screen and (min-width: 460px) {
+  .main__title {
+    max-width: 600px;
+    margin: auto;
+  }
+  .main__img {
+    width: min(700px, 100%);
+    max-height: 467px;
+    margin: auto;
+    border-radius: 20px;
+  }
+  .main__img--big {
+    object-fit: cover;
+  }
+
+  .information h2,
+.Restaurants h2 {
+    text-align: center;
+  }
+
+  .Restaurants .Restaurants__Card,
+.information .information__pill {
+    max-width: 425px;
+    margin: 2rem auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__pill {
+    width: 428px;
+  }
+
+  .Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=stylehome.css.map */
